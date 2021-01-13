@@ -1,15 +1,131 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HTML Form</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <h1>HTML Form</h1>
-  <script type="text/javascript" src="./main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <form>
+      Personal information???<br>
+      <!-- <label for="surname">Surname:<br>
+        <input
+          type="text"
+          name="surname"
+        >
+      </label> -->
+      <br><br>
+      <!-- <label for="name">Name:<br>
+        <input
+          type="text"
+          name="name"
+      >
+      </label> -->
+      <br><br>
+      <label for="tentacles">How old are You?</label>
+      <input
+        type="number"
+        id="tentacles"
+        name="tentacles"
+        value="12"
+      >
+      <br><br>
+      <label for="birthday">Full date of birth</label>
+      <input
+        type="date"
+        id="birthday"
+        name="birthday"
+      >
+      <br><br>
+      <!-- <label>
+        <span>I accept the term of the argeement</span>
+        <input type="checkbox" name="terms"
+      >
+      </label> -->
+      <br><br>
+        Registration???<br>
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        value="email@example.com"
+      >
+      <br><br>
+      <label for="pass">Password</label>
+      <input
+        type="password"
+        id="pass"
+        name="pass" required>
+      <br><br>
+        An interesting fact about you!
+      <br>
+      <p>Do you like cats?</p>
+      <label for="yes">Yes</label>
+      <input
+        type="radio"
+        id="yes"
+        name="cats"
+        value="yes"
+      >
+      <label for="no">No</label>
+      <input
+        type="radio"
+        id="no"
+        name="cats"
+        value="no"
+      >
+      <br><br>
+      <p>What is your favorite color?</p>
+      <label for="color"></label>
+      <input
+        type="color"
+        id="color"
+        name="color"
+        value="#000"
+      >
+      <br><br>
+      <label for="bed-time">What time do you go to bed?</label>
+      <input
+        type="datetime-local"
+        id="bed-time"
+        name="bed-time">
+      <br><br>
+      <label for="car-select">What are your favorite brand of cars?</label>
+      <select id="car-select">
+        <option value=""></option>
+        <option value="bmw">BMW</option>
+        <option value="audi">Audi</option>
+        <option value="lada">Lada</option>
+      </select>
+      <br><br>
+      <!-- <label for="work">How do you rate our work?</label>
+      <input
+        type="range"
+        id="points"
+        name="work"
+      > -->
+      <br><br>
+      Additional info???
+      <br>
+      <label for="comments">Comments</label>
+      <textarea
+        id="comments"
+        name="comments"
+      >
+      </textarea>
+      <br><br>
+      <label for="choose-select">What are your favorite brand of cars?</label>
+      <select id="choose-select">
+        <option value="yes">yes</option>
+        <option value="no">no</option>
+      </select>
+      <br><br>
+      <button>Submit</button>
+    </form>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
 </html>
