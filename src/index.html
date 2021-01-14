@@ -26,7 +26,7 @@
             required
           >
         </div>
-        <div>
+        <div class="input">
           <label for="name">Name:</label>
           <input
             type="text"
@@ -43,11 +43,13 @@
             id="age"
             name="age"
             value="12"
+            min="1"
+            max="110"
             required
           >
         </div>
         <div class="input">
-          <label for="birthday">Full date of birth</label>
+          <label for="birthday">Full date of birth:</label>
           <input
             type="date"
             id="birthday"
@@ -56,7 +58,7 @@
         </div>
         <div class="input">
           <label for="terms">
-            I accept the term of the argeement
+            I accept the term of the agreement
           </label>
           <input
             type="checkbox"
@@ -69,17 +71,17 @@
       <fieldset class="info">
         <legend>Registration</legend>
         <div class="input">
-          <label for="email">E-mail</label>
+          <label for="email">E-mail:</label>
           <input
             type="email"
             id="email"
             name="email"
-            value="email@example.com"
+            placeholder="email@example.com"
             required
           >
         </div>
         <div class="input">
-          <label for="pass">Password</label>
+          <label for="pass">Password:</label>
           <input
             type="password"
             id="pass"
@@ -89,24 +91,24 @@
           >
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="info">
         <legend>An interesting fact about you!</legend>
         <div class="input">
-          <label for="yes">Do you like cats?</label>
+          <span>Do you love cats?</span>
           <input
             type="radio"
-            id="for"
-            name="yes"
+            id="yes"
+            name="cats"
             value="yes"
           >
           <label for="yes">Yes</label>
           <input
             type="radio"
-            id="yes"
-            name="no"
+            id="no"
+            name="cats"
             value="no"
           >
-          <label for="yes">No</label>
+          <label for="no">No</label>
         </div>
         <div class="input">
           <label for="color">
@@ -124,7 +126,7 @@
             What time do you go to bed?
           </label>
           <input
-            type="datetime-local"
+            type="time"
             id="bed-time"
             name="bed-time"
             step="1"
@@ -168,7 +170,9 @@
           </textarea>
         </div>
         <div class="input">
-          <label for="choose-select">What are your favorite brand of cars?</label>
+          <label for="choose-select">
+            Would you recomended us?
+          </label>
           <select id="choose-select">
             <option value="yes">yes</option>
             <option value="no">no</option>
